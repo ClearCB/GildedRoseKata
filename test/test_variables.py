@@ -1,3 +1,9 @@
+'''
+At this file I will store all the variables needed to check if the software
+complete each routines correctly
+'''
+
+
 items_day_zero = [["+5 Dexterity Vest", 10, 20],
                 ["Aged Brie", 2, 0],
                 ["Elixir of the Mongoose", 5, 7],

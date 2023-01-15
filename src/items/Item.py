@@ -17,29 +17,3 @@ class Item:
     def __repr__(self):
         
         return f"{self.name} {self.sell_in} {self.quality}"
-
-    # Getters/Setters
-    def getName(self):
-
-        return self.name
-
-    def getSellIn(self):
-
-        return self.name
-
-    def getQuality(self):
-
-        return self.name
-
-    def setName(self, new_name):
-
-        self.name = new_name
-
-    def setSellIn(self, new_sell_in):
-
-        self.name = new_sell_in
-
-    def setQuality(self, new_quality):
-
-        self.name = new_quality
-
