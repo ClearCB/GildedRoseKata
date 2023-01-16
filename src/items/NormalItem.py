@@ -1,5 +1,5 @@
-from src.items.Item import *
-from src.items.Interface import *
+from src.Items.Item import *
+from src.Items.Interface import *
 
 '''
 This class will adquire the propierties about the Item class, which give it the atributes
@@ -38,7 +38,9 @@ class NormalItem(Item, Interface):
     # By domain, the quality has the following behaviour (check ProblemSpecificationRequirements.txt)
     def setQuality(self, quality_increment):
 
-        if self.quality < 50:
+        self.quality += quality_increment
+        
+        if self.quality > 50:
 
             self.quality = 50
 
@@ -46,9 +48,15 @@ class NormalItem(Item, Interface):
 
             self.quality = 0
 
-        else:
+        assert 0 <= self.quality <= 50 # Invariant, the quality must be always under those values
 
-            self.quality += quality_increment
+    # Override the method updateQuality adapted to NormalItems
+    def updateQuality(self):
+        
+        if self.sell_in > 0:
 
-        assert 0 < self.quality <= 50 # Invariant, the quality must be always under those values
+            self.setQuality(-1)
 
+        elif self.sell_in < 0:
+
+            self.setQuality(-2)
