@@ -15,4 +15,8 @@ class AgedBrie:
     # Override the method updateQuality
     def updateQuality(self):
 
-        pass
+        if self.sell_in >= 0:
+            self.setQuality(+1)
+
+        else:
+            self.setQuality(+2)
