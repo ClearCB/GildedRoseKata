@@ -38,3 +38,5 @@ def test_updateQuality(cheese):
         # We update de quality to the object
         cheese.updateQuality()
         check_sell_in -= 1
+        assert cheese.sell_in == check_sell_in
+        assert cheese.quality == check_quality

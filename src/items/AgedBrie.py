@@ -20,3 +20,5 @@ class AgedBrie(NormalItem):
 
         else:
             self.setQuality(+2)
+
+        self.setSellIn()

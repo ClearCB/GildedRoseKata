@@ -69,3 +69,4 @@ def test_updateQuality(mouse):
 
         # We compare if both qualities have the same behaviour
         assert mouse.quality == check_quality
+        assert mouse.sell_in == check_sell_in
