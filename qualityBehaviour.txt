@@ -32,6 +32,8 @@ the quality starts degrading twice fast as normal.
 Aged Brie
 ---------
 
-The quality of Aged Brie items increases the quality ina  reverse ways than the NormalItem does.
+The quality of Aged Brie items increases the quality in a reverse ways than the NormalItem does.
+
+The longer the sell_in date is close, the more quality the item gets
 
 Increases 1 till the sell-in date arrives, and then it start upgrading its quality per 2. 

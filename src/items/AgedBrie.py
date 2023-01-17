@@ -5,7 +5,7 @@ We will create a class called 'Aged brie', in which we will inheritance the clas
 NormalItem but overriding the method updateQuality adapting it to each product
 '''
 
-class AgedBrie:
+class AgedBrie(NormalItem):
     
     # Constructor, inheritated from Item class.
     def __init__(self, name, sell_in, quality):
