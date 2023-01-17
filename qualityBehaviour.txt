@@ -45,3 +45,7 @@ Sulfuras, legendary item
 
 The sulfuras item is a little bit special, since it is legendary...it wont even be sold and 
 its quality will never be diferent than 80.
+
+---------
+Backstage
+---------
