@@ -49,3 +49,7 @@ its quality will never be diferent than 80.
 ---------
 Backstage
 ---------
+
+The backstage item quality update will depend on the sell in date.
+
+If the sell in date is 10 or less, the quality will increase 
