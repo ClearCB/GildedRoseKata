@@ -22,13 +22,14 @@ All the items at the shop, has a common constraint about the quality:
 
 The quality is always greater or equal than 0 and lower than 50.
 
-
+------------
 Normal Items
 ------------
 
 The quality of Normal Items degrade 1 per day passed till the sell-in date arrives. Once this date arrives
 the quality starts degrading twice fast as normal.
 
+---------
 Aged Brie
 ---------
 
@@ -37,3 +38,10 @@ The quality of Aged Brie items increases the quality in a reverse ways than the 
 The longer the sell_in date is close, the more quality the item gets
 
 Increases 1 till the sell-in date arrives, and then it start upgrading its quality per 2. 
+
+------------------------
+Sulfuras, legendary item
+------------------------
+
+The sulfuras item is a little bit special, since it is legendary...it wont even be sold and 
+its quality will never be diferent than 80.
