@@ -10,6 +10,7 @@ class Backstage(NormalItem):
 
         Item.__init__(self, name, sell_in, quality)
 
+    # Override the method updateQuality
     def updateQuality(self):
         
         if 5 < self.sell_in <= 10:

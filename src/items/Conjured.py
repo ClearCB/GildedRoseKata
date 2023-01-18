@@ -11,6 +11,7 @@ class Conjured(NormalItem):
 
         Item.__init__(self, name, sell_in, quality)
 
+    # Override the method updateQuality
     def updateQuality(self):
 
         if self.sell_in >= 0:
