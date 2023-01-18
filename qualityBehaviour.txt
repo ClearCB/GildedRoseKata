@@ -54,3 +54,10 @@ The backstage item quality update will depend on the sell in date, the closest i
 
 If the sell in date is 10 or less, the quality will increase by 2. If the sell-in date is 5 or less it increases by 3
 if the sell in data is 0, the quality drops to 0
+
+--------
+Conjured
+--------
+
+The conjured item, decreases its quality twice as fast as normal items. per 2 if sell in did not arrived
+Per 4 if it already passed
