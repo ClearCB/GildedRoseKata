@@ -1,4 +1,4 @@
-package java;
+package java.domain;
 
 public class App {
     

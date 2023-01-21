@@ -15,7 +15,7 @@ final class Item{
     private int quality;
 
     // Constructor to the method
-    Item(String name, int sellIn, int quality){
+    public Item(String name, int sellIn, int quality){
 
         this.name = name;
         this.sellIn = sellIn;
@@ -54,6 +54,7 @@ final class Item{
     }
 
     // Override the method toString, to all the classes.
+    @Override
     public String toString(){
 
         return ("Item name: "+ this.getName() +
