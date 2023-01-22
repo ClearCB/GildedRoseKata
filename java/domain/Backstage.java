@@ -2,7 +2,7 @@ package java.domain;
 
 public class Backstage extends NormalItem {
     
-    Backstage(String name, int sellIn, int quality){
+    public Backstage(String name, int sellIn, int quality){
 
         super(name, sellIn, quality);
     }
