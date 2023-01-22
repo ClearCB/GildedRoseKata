@@ -8,6 +8,14 @@ public class AgedBrie extends NormalItem  {
 
     @Override
     public void updateQuality(){
-        ;
+        
+        if (this.getSellIn() >= 0){
+            this.calculateQuality(+1);
+        }
+
+        else{
+            this.calculateQuality(+2);
+        }
+        this.setSellIn();
     }
 }

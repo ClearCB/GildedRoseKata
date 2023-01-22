@@ -10,9 +10,9 @@ package java.domain;
 
 final class Item{
     
-    private String name;
-    private int sellIn;
-    private int quality;
+    String name;
+    int sellIn;
+    int quality;
 
     // Constructor to the method
     public Item(String name, int sellIn, int quality){
@@ -22,44 +22,50 @@ final class Item{
         this.quality = quality;
     }
 
-    // Getters and Setters
-    public String getName(){
-        
-        return this.name;
-    }
-
-    public int getSellIn(){
-
-        return this.sellIn;
-    }
-
-    public int getQuality(){
-
-        return this.quality;
-    }
-
-    public void setName(String newName){
-
-        this.name = newName;
-    }
-
-    public void setSellIn(int value){
-
-        this.sellIn = value;
-    }
-
-    public void setQuality(int value){
-
-        this.quality = value; 
-    }
-
-    // Override the method toString, to all the classes.
     @Override
     public String toString(){
 
-        return ("Item name: "+ this.getName() +
-                ". Sell-In date: "+ this.getSellIn() + 
-                ". Actual quality: " + this.getQuality() + ". ");
+        return ("Item name: "+ this.name +
+                ". Sell-In date: "+ this.sellIn + 
+                ". Actual quality: " + this.quality + ". ");
+
     }
+
+    // For being strict to the initial kata, i will comment this part that
+    // I created to keep in mind encapsulation.
+
+
+    // Getters and Setters
+    // public String getName(){
+        
+    //     return this.name;
+    // }
+
+    // public int getSellIn(){
+
+    //     return this.sellIn;
+    // }
+
+    // public int getQuality(){
+
+    //     return this.quality;
+    // }
+
+    // public void setName(String newName){
+
+    //     this.name = newName;
+    // }
+
+    // public void setSellIn(int value){
+
+    //     this.sellIn = value;
+    // }
+
+    // public void setQuality(int value){
+
+    //     this.quality = value; 
+    // }
+
+    // Override the method toString, to all the classes.
 
 }

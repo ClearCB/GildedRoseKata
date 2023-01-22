@@ -24,50 +24,50 @@ public class NormalItem implements Updateable {
 
     public String getName(){
         
-        return item.getName();
+        return item.name;
     }
 
     public int getSellIn(){
 
-        return item.getSellIn();
+        return item.sellIn;
     }
 
     public int getQuality(){
 
-        return item.getQuality();
+        return item.quality;
     }
 
     public void setName(String newName){
 
-        item.setName(newName);
+        item.name = newName;
     }
 
-    public void setSellIn(int value){
+    public void setSellIn(){
 
-        item.setSellIn(value);
+        item.sellIn = item.sellIn - 1;
     }
 
     public void setQuality(int value){
 
-        item.setQuality(value);
+        item.quality = value;
     }
 
-    // Calculate the quality if the value is between 0 and 50.
+    // Calculate the quality if the value is between 0 and 50. Keeping encapsulation.
     public void calculateQuality(int value){
         
-        if (getQuality()>50){
+        if (getQuality() + value > 50){
 
             setQuality(50);
         }
 
-        else if (getQuality() < 0){
+        else if (getQuality() + value >= 0){
 
-            setQuality(0);
+            setQuality(getQuality()+value);
         }
 
         else {
 
-            setQuality(getQuality()+value);
+            setQuality(0);
         }
 
     }
@@ -83,6 +83,8 @@ public class NormalItem implements Updateable {
         else if (getSellIn()<0){
             calculateQuality(-2);
         }
+
+        this.setSellIn();
     }
 
 }
